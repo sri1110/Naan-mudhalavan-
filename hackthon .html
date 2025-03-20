@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌤️ Weather Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">🌤️ Weather Dashboard</h1>
+        <p class="subtitle">Get real-time weather updates for any city! 🌍</p>
+
+        <input type="text" id="cityInput" placeholder="🌆 Enter city name..." class="input-box">
+        <button onclick="fetchWeather()" class="weather-btn">🔍 Get Weather</button>
+
+        <p id="errorMessage" class="error"></p>
+        
+        <div id="weatherDetails" class="weather-info" style="display: none;">
+            <h2 id="cityName"></h2>
+            <p id="temperature"></p>
+            <p id="humidity"></p>
+            <p id="weatherCondition"></p>
+            <img id="weatherIcon" src="" alt="Weather Icon">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
